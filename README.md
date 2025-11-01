@@ -14,14 +14,13 @@
 
 ## 📋 Table of Contents
 
-- [Overview](#overview)
+- [Overview](##overview)
 - [Key Features](#key-features)
 - [Architecture](#architecture)
 - [Design Methodology](#design-methodology)
 - [Performance Results](#performance-results)
 - [Implementation Results](#implementation-results)
 - [Complete Design Flow](#complete-design-flow)
-- [Directory Structure](#directory-structure)
 - [Getting Started](#getting-started)
 - [References](#references)
 - [Author](#author)
