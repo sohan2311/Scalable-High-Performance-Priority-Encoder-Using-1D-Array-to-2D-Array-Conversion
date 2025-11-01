@@ -1,0 +1,4 @@
+ncsim(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+ncsim: *F,NOLICN: Unable to checkout license for the simulation. Use ncsim -MESSAGES for more information. (flag - 2) 'lic_error -15'.
+ncsim: Memory Usage - 38.6M program + 20.3M data = 58.9M total (59.4M Peak)
+ncsim: CPU Usage - 0.0s system + 0.0s user = 0.0s total (0.0s, 85.3% cpu)
