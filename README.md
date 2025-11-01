@@ -232,7 +232,6 @@ This implementation achieves **1.2× to 1.5× higher operating frequency** compa
   <p><em>Area Report</em></p>
 
   
-### Area Report
   
 ---
 
