@@ -1,0 +1,44 @@
+# DO NOT EDIT -- automatically generated design data file -- DO NOT EDIT!!!
+list \
+workdir {/home/iiitdmk/Desktop/scalable_project} \
+cdslib {/home/iiitdmk/Desktop/scalable_project/cds.lib} \
+worklib {worklib} \
+mode {0} \
+filters {*.v *.vhd *.vhdl} \
+sesslist {} \
+ToolOption_NCVhdl {-logfile ncvhdl.log -errormax 15 -update -linedebug -status} \
+ToolOption_NCVlog {-logfile ncvlog.log -errormax 15 -update -linedebug -status} \
+ToolOption_NCVlog/AMS {-logfile ncvlog.log -errormax 15 -update -linedebug -status} \
+ToolOption_NCVlog/SV {-logfile ncvlog.log -errormax 15 -update -linedebug -status} \
+ToolOption_irun {-gui {} +linedebug +access rwc -q} \
+ToolOption_NCElab {-logfile ncelab.log -errormax 15 -status -access +wc} \
+ToolOption_NCSim { -gui -cdslib /home/iiitdmk/Desktop/scalable_project/cds.lib -logfile ncsim.log -errormax 15 -status} \
+ToolOption_NCSdfc {-logfile ncsdfc.log -compile -status} \
+ToolOption_HAL {-logfile hal.log} \
+ToolOption_SimVision {} \
+ToolOption_Update {-errormax 15 -force} \
+ToolOption_SimCompare {} \
+ToolOption_NCBrowse {} \
+ToolOption_HALDefEdit {} \
+ToolOption_NCShell {-view shell -logfile ncshell.log -errormax 15 -suffix .v} \
+ToolOption_NCProtect {-logfile ncprotect.log} \
+ToolOption_NCDC {-logfile ncdc.log -messages -status} \
+ToolOption_DBUtil {} \
+ToolOption_NCVhdl {-logfile ncvhdl.log -errormax 15 -update -linedebug -status} \
+ToolOption_NCVlog {-logfile ncvlog.log -errormax 15 -update -linedebug -status} \
+ToolOption_NCVlog/AMS {-logfile ncvlog.log -errormax 15 -update -linedebug -status} \
+ToolOption_NCVlog/SV {-logfile ncvlog.log -errormax 15 -update -linedebug -status} \
+ToolOption_irun {-gui {} +linedebug +access rwc -q} \
+ToolOption_NCElab {-logfile ncelab.log -errormax 15 -status -access +wc} \
+ToolOption_NCSim { -gui -cdslib /home/iiitdmk/Desktop/scalable_project/cds.lib -logfile ncsim.log -errormax 15 -status} \
+ToolOption_NCSdfc {-logfile ncsdfc.log -compile -status} \
+ToolOption_HAL {-logfile hal.log} \
+ToolOption_SimVision {} \
+ToolOption_Update {-errormax 15 -force} \
+ToolOption_SimCompare {} \
+ToolOption_NCBrowse {} \
+ToolOption_HALDefEdit {} \
+ToolOption_NCShell {-view shell -logfile ncshell.log -errormax 15 -suffix .v} \
+ToolOption_NCProtect {-logfile ncprotect.log} \
+ToolOption_NCDC {-logfile ncdc.log -messages -status} \
+ToolOption_DBUtil {} \

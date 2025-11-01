@@ -1,0 +1,2 @@
+# Format: clock  timeReq  slackR/slackF  setupR/setupF  instName/pinName   # cycle(s)
+@(R)->@(R)	1.200    */0.016         */0.000         v    1

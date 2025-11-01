@@ -1,0 +1,72 @@
+VERSION {1.0}
+PTDEF {instance} {pin} {cell} {edge} {clock_edge} {clock} {phase}
+BANNER
+  {Module} {pe64_lookahead}
+  {Timing} {LATE}
+  {Slew Propagation} {WORST}
+  {PVT Mode} {max}
+  {Tree Type} {balanced_tree}
+  {Process} {1.0}
+  {Voltage} {0.9}
+  {Temperature} {125.0}
+  {time unit} {1.000 ns}
+  {capacitance unit} {1.000 pF}
+  {resistance unit} {1.000 kOhm}
+  {TOOL} {Genus(TM) Synthesis Solution v20.11-s111_1}
+  {DATE} {Tue Sep 30 13:59:14 IST 2025}
+END_BANNER
+
+PATH 1
+  VIEW default
+  CHECK_TYPE 
+  REF {} {}
+  ENDPT {} {v} {} {v} {leading} {} {(C)(P)}
+  BEGINPT {} {d[61]} {} {v} {leading} {@} {@(D)(P) *}
+  REQ_CLC
+    {} {Other End Arrival Time} {0.000}
+    {=} {Required Time} {0.000}
+  END_REQ_CLC
+
+  SLK_CLC
+    {-} {Arrival Time} {-0.061}
+    {=} {Slack Time} {0.061}
+  END_SLK_CLC
+  SLK 0.061
+
+  ARR_CLC
+    {} {Clock Rise Edge} {0.000}
+    {+} {Input Delay} {0.000}
+    {=} {Beginpoint Arrival Time} {0.000}
+  END_ARR_CLC
+
+  LAUNCH_CLK_PATH
+    COLUMNS {instance} {fpin} {fedge} {tpin} {tedge} {net} {cell} {delay} {incr_delay} {slew} {load} {arrival} {required} {stolen} {fanout} {pin_location}
+  END_LAUNCH_CLK_PATH
+
+  DATA_PATH
+    COLUMNS {instance} {fpin} {fedge} {tpin} {tedge} {net} {cell} {delay} {incr_delay} {slew} {load} {arrival} {required} {stolen} {fanout} {pin_location}
+    PORT {} {d[61]} {v} {} {} {d[61]} {} {} {} {0.000} {0.004} {0.000} {0.061} {} {2} {}
+    NET {} {} {} {} {} {d[61]} {} {0.000} {0.000} {0.000} {0.004} {0.000} {0.061} {} {} {}
+    INST {g2818} {A} {v} {Y} {^} {} {NOR4X1} {0.269} {0.000} {0.319} {} {0.269} {0.330} {} {4} {}
+    NET {} {} {} {} {} {n_152} {} {0.000} {0.000} {0.319} {0.007} {0.269} {0.330} {} {} {}
+    INST {g2806} {A} {^} {Y} {v} {} {CLKINVX1} {0.091} {0.000} {0.119} {} {0.360} {0.421} {} {3} {}
+    NET {} {} {} {} {} {n_12} {} {0.000} {0.000} {0.119} {0.006} {0.360} {0.421} {} {} {}
+    INST {g2793__6260} {A} {v} {Y} {^} {} {NOR3X1} {0.199} {0.000} {0.210} {} {0.559} {0.620} {} {4} {}
+    NET {} {} {} {} {} {n_17} {} {0.000} {0.000} {0.210} {0.007} {0.559} {0.620} {} {} {}
+    INST {g2790__2398} {B} {^} {Y} {v} {} {NAND2XL} {0.173} {0.000} {0.188} {} {0.732} {0.793} {} {3} {}
+    NET {} {} {} {} {} {n_14} {} {0.000} {0.000} {0.188} {0.006} {0.732} {0.793} {} {} {}
+    INST {g2786__6417} {B} {v} {Y} {^} {} {NOR2X1} {0.160} {0.000} {0.172} {} {0.892} {0.953} {} {4} {}
+    NET {} {} {} {} {} {n_39} {} {0.000} {0.000} {0.172} {0.007} {0.892} {0.953} {} {} {}
+    INST {g2785} {A} {^} {Y} {v} {} {CLKINVX1} {0.104} {0.000} {0.105} {} {0.996} {1.057} {} {7} {}
+    NET {} {} {} {} {} {q[5]} {} {0.000} {0.000} {0.105} {0.010} {0.996} {1.057} {} {} {}
+    INST {g2782__5115} {C} {v} {Y} {v} {} {OR3XL} {0.143} {0.000} {0.042} {} {1.139} {1.200} {} {1} {}
+    NET {} {} {} {} {} {v} {} {0.000} {0.000} {0.042} {0.000} {1.139} {1.200} {} {} {}
+  END_DATA_PATH
+
+  CAP_CLK_PATH
+    COLUMNS {instance} {fpin} {fedge} {tpin} {tedge} {net} {cell} {delay} {incr_delay} {slew} {load} {arrival} {required} {stolen} {fanout} {pin_location}
+  END_CAP_CLK_PATH
+
+END_PATH 1
+
+
