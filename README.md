@@ -348,7 +348,7 @@ The simulation runs in 3 stages:
 
 **Step 1: Create Synthesis Script**
 
-Create `rc_script.tcl`:
+Create `run.tcl`:
 ```tcl
 # Set design name
 set DESIGN priority_encoder_64bit
@@ -404,7 +404,7 @@ set_load 0.1 [all_outputs]
 
 **Step 3: Run Synthesis**
 ```bash
-genus -f rc_script.tcl
+genus -f run.tcl
 ```
 
 **Step 4: Analyze Results**
@@ -847,12 +847,7 @@ genus -f rc_script.tcl -log ../logs/genus.log
 cd pnr/scripts
 innovus
 # In Innovus prompt:
-source design.globals
-source floorplan.tcl
-source powerplan.tcl
-source placement.tcl
-source cts_spec.tcl
-source routing.tcl
+source run.tcl
 ```
 
 **4. Complete Automated Flow:**
