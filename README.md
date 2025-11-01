@@ -143,7 +143,7 @@ GDS II Generation
 | **Supply Voltage** | 1.8V (180nm), 1.0V (90nm), 0.9V (45nm) |
 | **Corner** | TT (Typical-Typical) |
 | **Temperature** | 25°C |
-| **Input Sizes** | 4-bit, 8-bit, 16-bit, 64-bit, 256-bit, 2048-bit |
+| **Input Sizes** | 4-bit, 8-bit, 16-bit, 64-bit, 64-bit with mux, 256-bit |
 
 ---
 
@@ -153,8 +153,8 @@ GDS II Generation
 
 | Configuration | Matrix Size | Target Freq | Achieved Freq | Critical Path | Improvement |
 |--------------|-------------|-------------|---------------|---------------|-------------|
-| 64-bit | 8×8 | 500 MHz | 649 MHz | 1.54 ns | 1.2× |
-| 256-bit | 16×16 | 400 MHz | 520 MHz | 1.92 ns | 1.5× |
+| 64-bit | 16×4 | 500 MHz | 649 MHz | 1.54 ns | 1.2× |
+| 256-bit | 64×4 | 400 MHz | 520 MHz | 1.92 ns | 1.5× |
 
 ### Comparison with State-of-the-Art
 
