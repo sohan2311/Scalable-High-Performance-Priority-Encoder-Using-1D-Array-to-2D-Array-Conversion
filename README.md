@@ -10,6 +10,7 @@
 
 <div align="center">
   <img src="Images/PE 64.png" alt="Priority Encoder Project" width="800"/>
+  <p><em>The architecture of PE64 with (a) (M, N) = (4, 16) and (b) (M, N) = (16, 4)</em></p>
 </div>
 
 ## 📋 Table of Contents
@@ -68,6 +69,7 @@ Traditional priority encoders face scalability challenges. This design converts 
 
 <div align="center">
   <img src="Images/Block Diagram.png" alt="Block Diagram" width="700"/>
+  <p><em>Block diagram of conventional priority encoder PE64 and Parallel priority encoder of 64-bit (PE64) (Kun et al. 2004)</em></p>
 </div>
 
 ### 1D-to-2D Conversion Method
@@ -98,10 +100,12 @@ Final Priority Index Output
 
 <div align="center">
   <img src="Images/Architechture 1D to 2D Array Conversion.png" alt="Architecture 1D to 2D Array Conversion" width="700"/>
+  <p><em>The architecture of PE64 (a) without look-ahead signal and (b) with look-ahead signal</em></p>
 </div>
 
 <div align="center">
   <img src="Images/Architechture Scalable 4x16 to 64.png" alt="Architecture Scalable PE using 4x16 to PE_64" width="700"/>
+  <p><em>The architecture of PE64 with (a) (M, N) = (4, 16) and (b) (M, N) = (16, 4) </em></p>
 </div>
 
 ---
@@ -203,6 +207,18 @@ This implementation achieves **1.2× to 1.5× higher operating frequency** compa
 <div align="center">
   <img src="Scalable PE64/scalable_PE64 (main - 180nm)/Waveforms/wave2.png" alt="Functional Simulation" width="800"/>
   <p><em>Functional Verification Waveform 2</em></p>
+</div>
+<div align="center">
+  <img src="Scalable PE64/scalable_PE64 (main - 180nm)/Waveforms/wave3.png" alt="Functional Simulation" width="800"/>
+  <p><em>Functional Verification Waveform 3</em></p>
+</div>
+<div align="center">
+  <img src="Scalable PE64/scalable_PE64 (main - 180nm)/Waveforms/wave4.png" alt="Functional Simulation" width="800"/>
+  <p><em>Functional Verification Waveform 4</em></p>
+</div>
+<div align="center">
+  <img src="Scalable PE64/scalable_PE64 (main - 180nm)/Waveforms/wave5.png" alt="Functional Simulation" width="800"/>
+  <p><em>Functional Verification Waveform 5</em></p>
 </div>
 
 ### Analysis Reports
