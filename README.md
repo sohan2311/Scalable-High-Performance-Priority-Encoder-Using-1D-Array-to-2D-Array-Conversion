@@ -925,7 +925,15 @@ source routing.tcl
 
 ## 👤 Author
 
+**Vikramaditya Singh**
+Roll Number - 123EC0042
+
+- GitHub: [@sohan2311](https://github.com/vikramzw-max)
+- Project Link: [Priority Encoder Repository](https://github.com/sohan2311/Scalable-High-Performance-Priority-Encoder-Using-1D-Array-to-2D-Array-Conversion)
+
+
 **Sohan Maity**
+Roll Number - 523EC0001
 
 - GitHub: [@sohan2311](https://github.com/sohan2311)
 - Project Link: [Priority Encoder Repository](https://github.com/sohan2311/Scalable-High-Performance-Priority-Encoder-Using-1D-Array-to-2D-Array-Conversion)
@@ -936,7 +944,7 @@ source routing.tcl
 
 For questions or collaboration:
 - **GitHub Issues**: [Open an Issue](https://github.com/sohan2311/Scalable-High-Performance-Priority-Encoder-Using-1D-Array-to-2D-Array-Conversion/issues)
-- **Email**: [sohan.maity2311@gmail.com]
+- **Email**: [sohan.maity2311@gmail.com] [vikramzw@gmail.com]
 
 ---
 
