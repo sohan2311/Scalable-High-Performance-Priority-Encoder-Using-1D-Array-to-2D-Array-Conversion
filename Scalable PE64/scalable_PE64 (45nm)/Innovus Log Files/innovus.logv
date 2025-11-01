@@ -1,0 +1,511 @@
+[10/10 16:31:20      0s] 
+[10/10 16:31:20      0s] Cadence Innovus(TM) Implementation System.
+[10/10 16:31:20      0s] Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+[10/10 16:31:20      0s] 
+[10/10 16:31:20      0s] Version:	v20.14-s095_1, built Mon Apr 19 14:41:42 PDT 2021
+[10/10 16:31:20      0s] Options:	
+[10/10 16:31:20      0s] Date:		Fri Oct 10 16:31:20 2025
+[10/10 16:31:20      0s] Host:		cad28 (x86_64 w/Linux 3.10.0-1160.el7.x86_64) (6cores*12cpus*Intel(R) Core(TM) i7-8700 CPU @ 3.20GHz 12288KB)
+[10/10 16:31:20      0s] OS:		Red Hat Enterprise Linux Server release 7.9 (Maipo)
+[10/10 16:31:20      0s] 
+[10/10 16:31:20      0s] License:
+[10/10 16:31:20      0s] 		invs	Innovus Implementation System	20.1	checkout succeeded
+[10/10 16:31:20      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[10/10 16:31:30      9s] @(#)CDS: Innovus v20.14-s095_1 (64bit) 04/19/2021 14:41 (Linux 2.6.32-431.11.2.el6.x86_64)
+[10/10 16:31:30      9s] @(#)CDS: NanoRoute 20.14-s095_1 NR210411-1939/20_14-UB (database version 18.20.547) {superthreading v2.13}
+[10/10 16:31:30      9s] @(#)CDS: AAE 20.14-s018 (64bit) 04/19/2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+[10/10 16:31:30      9s] @(#)CDS: CTE 20.14-s027_1 () Apr 13 2021 21:29:07 ( )
+[10/10 16:31:30      9s] @(#)CDS: SYNTECH 20.14-s017_1 () Mar 25 2021 13:07:27 ( )
+[10/10 16:31:30      9s] @(#)CDS: CPE v20.14-s080
+[10/10 16:31:30      9s] @(#)CDS: IQuantus/TQuantus 20.1.1-s460 (64bit) Fri Mar 5 18:46:16 PST 2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+[10/10 16:31:30      9s] @(#)CDS: OA 22.60-p052 Thu Feb 25 10:35:13 2021
+[10/10 16:31:30      9s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[10/10 16:31:30      9s] @(#)CDS: RCDB 11.15.0
+[10/10 16:31:30      9s] @(#)CDS: STYLUS 20.10-p026_1 (03/12/2021 08:04 PST)
+[10/10 16:31:30      9s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_31759_cad28_iiitdmk_BxSvCp.
+
+[10/10 16:31:30      9s] Change the soft stacksize limit to 0.2%RAM (31 mbytes). Set global soft_stack_size_limit to change the value.
+[10/10 16:31:31     10s] 
+[10/10 16:31:31     10s] **INFO:  MMMC transition support version v31-84 
+[10/10 16:31:31     10s] 
+[10/10 16:31:31     10s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[10/10 16:31:31     10s] <CMD> suppressMessage ENCEXT-2799
+[10/10 16:31:31     10s] <CMD> getVersion
+[10/10 16:31:31     10s] <CMD> getVersion
+[10/10 16:31:31     10s] <CMD> getVersion
+[10/10 16:31:31     10s] [INFO] Loading PVS 20.11 fill procedures
+[10/10 16:31:32     10s] <CMD> win
+[10/10 16:38:55    124s] <CMD> set init_gnd_net VSS
+[10/10 16:38:55    124s] <CMD> set init_lef_file ../../../install/FOUNDRY/digital/45nm/dig/lef/gsclib045_tech.lef
+[10/10 16:38:55    124s] <CMD> set init_design_settop 0
+[10/10 16:38:55    124s] <CMD> set init_verilog priority_netlist.v
+[10/10 16:38:55    124s] <CMD> set init_mmmc_file Default.view
+[10/10 16:38:55    124s] <CMD> set init_pwr_net {VDD }
+[10/10 16:38:55    124s] <CMD> init_design
+[10/10 16:38:55    124s] #% Begin Load MMMC data ... (date=10/10 16:38:55, mem=685.5M)
+[10/10 16:38:55    124s] #% End Load MMMC data ... (date=10/10 16:38:55, total cpu=0:00:00.0, real=0:00:00.0, peak res=685.7M, current mem=685.7M)
+[10/10 16:38:55    124s] 
+[10/10 16:38:55    124s] Loading LEF file ../../../install/FOUNDRY/digital/45nm/dig/lef/gsclib045_tech.lef ...
+[10/10 16:38:55    124s] **WARN: (IMPLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_PO', 
+[10/10 16:38:55    124s] **WARN: (IMPLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_DIFF', 
+[10/10 16:38:55    124s] **WARN: (IMPLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_PSUB', 
+[10/10 16:38:55    124s] **WARN: (IMPLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_PIMP', 
+[10/10 16:38:55    124s] **WARN: (IMPLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_NIMP', 
+[10/10 16:38:55    124s] **WARN: (IMPLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_NWELL', 
+[10/10 16:38:55    124s] Set DBUPerIGU to M2 pitch 400.
+[10/10 16:38:55    124s] 
+[10/10 16:38:55    124s] viaInitial starts at Fri Oct 10 16:38:55 2025
+viaInitial ends at Fri Oct 10 16:38:55 2025
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+[10/10 16:38:55    124s] Loading view definition file from Default.view
+[10/10 16:38:55    124s] Reading slow timing library '/home/install/FOUNDRY/digital/45nm/dig/lib/slow.lib' ...
+[10/10 16:38:55    124s] Read 477 cells in library 'slow' 
+[10/10 16:38:55    124s] Reading fast timing library '/home/install/FOUNDRY/digital/45nm/dig/lib/fast.lib' ...
+[10/10 16:38:56    125s] Read 477 cells in library 'fast' 
+[10/10 16:38:56    125s] Ending "PreSetAnalysisView" (total cpu=0:00:00.7, real=0:00:01.0, peak res=751.6M, current mem=700.4M)
+[10/10 16:38:56    125s] *** End library_loading (cpu=0.01min, real=0.02min, mem=11.0M, fe_cpu=2.09min, fe_real=7.60min, fe_mem=816.6M) ***
+[10/10 16:38:56    125s] #% Begin Load netlist data ... (date=10/10 16:38:56, mem=700.4M)
+[10/10 16:38:56    125s] *** Begin netlist parsing (mem=816.6M) ***
+[10/10 16:38:56    125s] Created 477 new cells from 2 timing libraries.
+[10/10 16:38:56    125s] Reading netlist ...
+[10/10 16:38:56    125s] Backslashed names will retain backslash and a trailing blank character.
+[10/10 16:38:56    125s] Reading verilog netlist 'priority_netlist.v'
+[10/10 16:38:56    125s] 
+[10/10 16:38:56    125s] *** Memory Usage v#1 (Current mem = 816.578M, initial mem = 284.301M) ***
+[10/10 16:38:56    125s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=816.6M) ***
+[10/10 16:38:56    125s] #% End Load netlist data ... (date=10/10 16:38:56, total cpu=0:00:00.0, real=0:00:00.0, peak res=710.1M, current mem=710.1M)
+[10/10 16:38:56    125s] Top level cell is pe64_lookahead.
+[10/10 16:38:56    125s] Hooked 954 DB cells to tlib cells.
+[10/10 16:38:56    125s] Ending "BindLib:" (total cpu=0:00:00.0, real=0:00:00.0, peak res=723.1M, current mem=723.1M)
+[10/10 16:38:56    125s] Starting recursive module instantiation check.
+[10/10 16:38:56    125s] No recursion found.
+[10/10 16:38:56    125s] Building hierarchical netlist for Cell pe64_lookahead ...
+[10/10 16:38:56    125s] *** Netlist is unique.
+[10/10 16:38:56    125s] Setting Std. cell height to 3420 DBU, based on Site CoreSite.
+[10/10 16:38:56    125s] **WARN: (IMPTRN-1101):	Could not determine power-rail locations in cells. Use default value GNDOnBtm.
+[10/10 16:38:56    125s] **ERROR: (IMPREPO-102):	Instance g2693__2398 of the cell OAI21X1 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[10/10 16:38:56    125s] **ERROR: (IMPREPO-102):	Instance g2697__6260 of the cell NAND2X1 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[10/10 16:38:56    125s] **ERROR: (IMPREPO-102):	Instance g2695__4319 of the cell NOR3X1 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[10/10 16:38:56    125s] **ERROR: (IMPREPO-102):	Instance g2696__8428 of the cell NOR2X1 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[10/10 16:38:56    125s] **ERROR: (IMPREPO-102):	Instance g2700__5526 of the cell OAI21X1 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[10/10 16:38:56    125s] **ERROR: (IMPREPO-102):	Instance g2704__6783 of the cell AOI21X2 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[10/10 16:38:56    125s] **ERROR: (IMPREPO-102):	Instance g2705__1617 of the cell NAND4X2 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[10/10 16:38:56    125s] **ERROR: (IMPREPO-102):	Instance g2703__2802 of the cell AOI21X2 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[10/10 16:38:56    125s] **ERROR: (IMPREPO-102):	Instance g2702__1705 of the cell OAI21X2 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[10/10 16:38:56    125s] **ERROR: (IMPREPO-102):	Instance g2701__5122 of the cell OAI21X2 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[10/10 16:38:56    125s] **ERROR: (IMPREPO-102):	Instance g2712__6131 of the cell AOI21X1 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[10/10 16:38:56    125s] **ERROR: (IMPREPO-102):	Instance g2708__1881 of the cell NOR2X1 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[10/10 16:38:56    125s] **ERROR: (IMPREPO-102):	Instance g2709__5115 of the cell OAI21X2 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[10/10 16:38:56    125s] **ERROR: (IMPREPO-102):	Instance g2721__7482 of the cell AOI21X2 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[10/10 16:38:56    125s] **ERROR: (IMPREPO-102):	Instance g2718__6161 of the cell AOI21X2 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[10/10 16:38:56    125s] **ERROR: (IMPREPO-102):	Instance g2707__9315 of the cell AOI211X4 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[10/10 16:38:56    125s] **ERROR: (IMPREPO-102):	Instance g2720__9945 of the cell OAI21X2 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[10/10 16:38:56    125s] **ERROR: (IMPREPO-102):	Instance g2714__2883 of the cell NOR2X1 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[10/10 16:38:56    125s] **ERROR: (IMPREPO-102):	Instance g2734__2346 of the cell OAI221X2 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[10/10 16:38:56    125s] **ERROR: (IMPREPO-102):	Instance g2724__6417 of the cell OAI221X2 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[10/10 16:38:56    125s] **WARN: (EMS-27):	Message (IMPREPO-102) has exceeded the current message display limit of 20.
+[10/10 16:38:56    125s] To increase the message display limit, refer to the product command reference manual.
+[10/10 16:38:56    125s] ** info: there are 955 modules.
+[10/10 16:38:56    125s] ** info: there are 125 stdCell insts.
+[10/10 16:38:56    125s] **ERROR: (IMPREPO-103):	There are 125 instances (50 cells) with no dimension defined.
+
+[10/10 16:38:56    125s] *** Memory Usage v#1 (Current mem = 863.004M, initial mem = 284.301M) ***
+[10/10 16:38:56    125s] Horizontal Layer M1 offset = 190 (guessed)
+[10/10 16:38:56    125s] Vertical Layer M2 offset = 200 (derived)
+[10/10 16:38:56    125s] Suggestion: specify LAYER OFFSET in LEF file
+[10/10 16:38:56    125s] Reason: hard to extract LAYER OFFSET from standard cells
+[10/10 16:38:56    125s] Generated pitch 0.5 in M11 is different from 0.48 defined in technology file in unpreferred direction.
+[10/10 16:38:56    125s] Generated pitch 0.5 in M11 is different from 0.48 defined in technology file in preferred direction.
+[10/10 16:38:56    125s] Generated pitch 0.4 in M10 is different from 0.48 defined in technology file in unpreferred direction.
+[10/10 16:38:56    125s] Generated pitch 0.5 in M10 is different from 0.48 defined in technology file in preferred direction.
+[10/10 16:38:56    125s] Generated pitch 0.2 in M9 is different from 0.33 defined in technology file in unpreferred direction.
+[10/10 16:38:56    125s] Generated pitch 0.4 in M9 is different from 0.33 defined in technology file in preferred direction.
+[10/10 16:38:56    125s] Generated pitch 0.19 in M2 is different from 0.2 defined in technology file in unpreferred direction.
+[10/10 16:38:56    125s] Generated pitch 0.2 in M1 is different from 0.19 defined in technology file in unpreferred direction.
+[10/10 16:38:56    125s] Set Default Net Delay as 1000 ps.
+[10/10 16:38:56    125s] Set Default Net Load as 0.5 pF. 
+[10/10 16:38:56    125s] Set Default Input Pin Transition as 0.1 ps.
+[10/10 16:38:56    125s] Extraction setup Started 
+[10/10 16:38:56    125s] Initializing multi-corner RC extraction with 1 active RC Corners ...
+[10/10 16:38:56    125s] Reading Capacitance Table File ../../../install/FOUNDRY/digital/45nm/dig/captable/cln28hpl_1p10m+alrdl_5x2yu2yz_typical.capTbl ...
+[10/10 16:38:56    125s] Cap table was created using Encounter 10.10-b056_1.
+[10/10 16:38:56    125s] Process name: cln28hpl_1p10m+alrdl_5x2yu2yz_typical.
+[10/10 16:38:56    125s] Set Shrink Factor to 0.90000
+[10/10 16:38:56    125s] Importing multi-corner RC tables ... 
+[10/10 16:38:56    125s] Summary of Active RC-Corners : 
+[10/10 16:38:56    125s]  
+[10/10 16:38:56    125s]  Analysis View: wc
+[10/10 16:38:56    125s]     RC-Corner Name        : Rc
+[10/10 16:38:56    125s]     RC-Corner Index       : 0
+[10/10 16:38:56    125s]     RC-Corner Temperature : 25 Celsius
+[10/10 16:38:56    125s]     RC-Corner Cap Table   : '../../../install/FOUNDRY/digital/45nm/dig/captable/cln28hpl_1p10m+alrdl_5x2yu2yz_typical.capTbl'
+[10/10 16:38:56    125s]     RC-Corner PreRoute Res Factor         : 1
+[10/10 16:38:56    125s]     RC-Corner PreRoute Cap Factor         : 1
+[10/10 16:38:56    125s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[10/10 16:38:56    125s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[10/10 16:38:56    125s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[10/10 16:38:56    125s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[10/10 16:38:56    125s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[10/10 16:38:56    125s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[10/10 16:38:56    125s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[10/10 16:38:56    125s]  
+[10/10 16:38:56    125s]  Analysis View: bc
+[10/10 16:38:56    125s]     RC-Corner Name        : Rc
+[10/10 16:38:56    125s]     RC-Corner Index       : 0
+[10/10 16:38:56    125s]     RC-Corner Temperature : 25 Celsius
+[10/10 16:38:56    125s]     RC-Corner Cap Table   : '../../../install/FOUNDRY/digital/45nm/dig/captable/cln28hpl_1p10m+alrdl_5x2yu2yz_typical.capTbl'
+[10/10 16:38:56    125s]     RC-Corner PreRoute Res Factor         : 1
+[10/10 16:38:56    125s]     RC-Corner PreRoute Cap Factor         : 1
+[10/10 16:38:56    125s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[10/10 16:38:56    125s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[10/10 16:38:56    125s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[10/10 16:38:56    125s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[10/10 16:38:56    125s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[10/10 16:38:56    125s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[10/10 16:38:56    125s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[10/10 16:38:56    125s] LayerId::1 widthSet size::4
+[10/10 16:38:56    125s] LayerId::2 widthSet size::4
+[10/10 16:38:56    125s] LayerId::3 widthSet size::4
+[10/10 16:38:56    125s] LayerId::4 widthSet size::4
+[10/10 16:38:56    125s] LayerId::5 widthSet size::4
+[10/10 16:38:56    125s] LayerId::6 widthSet size::4
+[10/10 16:38:56    125s] LayerId::7 widthSet size::5
+[10/10 16:38:56    125s] LayerId::8 widthSet size::5
+[10/10 16:38:56    125s] LayerId::9 widthSet size::5
+[10/10 16:38:56    125s] LayerId::10 widthSet size::4
+[10/10 16:38:56    125s] LayerId::11 widthSet size::3
+[10/10 16:38:56    125s] Updating RC grid for preRoute extraction ...
+[10/10 16:38:56    125s] eee: pegSigSF::1.070000
+[10/10 16:38:56    125s] Initializing multi-corner capacitance tables ... 
+[10/10 16:38:56    125s] Initializing multi-corner resistance tables ...
+[10/10 16:38:56    125s] Creating RPSQ from WeeR and WRes ...
+[10/10 16:38:56    125s] eee: l::1 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[10/10 16:38:56    125s] eee: l::2 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[10/10 16:38:56    125s] eee: l::3 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[10/10 16:38:56    125s] eee: l::4 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[10/10 16:38:56    125s] eee: l::5 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[10/10 16:38:56    125s] eee: l::6 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[10/10 16:38:56    125s] eee: l::7 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[10/10 16:38:56    125s] eee: l::8 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[10/10 16:38:56    125s] eee: l::9 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[10/10 16:38:56    125s] eee: l::10 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[10/10 16:38:56    125s] eee: l::11 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[10/10 16:38:56    125s] **Info: Trial Route has Max Route Layer 15/11.
+[10/10 16:38:56    125s] {RT Rc 0 11 11 {7 0} {10 0} 2}
+[10/10 16:38:56    125s] Preroute length aware model : n: 40 ; LLS: 2-3 ; HLS: 3-5 ; rDens: 0.000000 ; uaWl: 0.000000 ; uaWlH: 0.000000 ; aWlH: 0.000000 ; Pmax: 0.850000 ; wcR: 0.000000 ; newSi: 0.000000 ; pMod: 82 ; 
+[10/10 16:38:56    125s] *Info: initialize multi-corner CTS.
+[10/10 16:38:56    125s] Ending "SetAnalysisView" (total cpu=0:00:00.0, real=0:00:00.0, peak res=949.1M, current mem=735.6M)
+[10/10 16:38:56    125s] Reading timing constraints file 'priority_output.sdc' ...
+[10/10 16:38:56    125s] Current (total cpu=0:02:06, real=0:07:36, peak res=968.2M, current mem=968.2M)
+[10/10 16:38:56    125s] **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File priority_output.sdc, Line 9).
+[10/10 16:38:56    125s] 
+[10/10 16:38:56    125s] **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File priority_output.sdc, Line 10).
+[10/10 16:38:56    125s] 
+[10/10 16:38:56    125s] INFO (CTE): Reading of timing constraints file priority_output.sdc completed, with 2 WARNING
+[10/10 16:38:56    125s] Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1000.4M, current mem=1000.4M)
+[10/10 16:38:56    125s] Current (total cpu=0:02:06, real=0:07:36, peak res=1000.4M, current mem=1000.4M)
+[10/10 16:38:56    125s] Tech dependent Parameter, Build TLibAnalyzer for: cellAreaConsiderPadding
+[10/10 16:38:56    125s] 
+[10/10 16:38:56    125s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) Begin ...
+[10/10 16:38:56    125s] Summary for sequential cells identification: 
+[10/10 16:38:56    125s]   Identified SBFF number: 0
+[10/10 16:38:56    125s]   Identified MBFF number: 0
+[10/10 16:38:56    125s]   Identified SB Latch number: 0
+[10/10 16:38:56    125s]   Identified MB Latch number: 0
+[10/10 16:38:56    125s]   Not identified SBFF number: 0
+[10/10 16:38:56    125s]   Not identified MBFF number: 0
+[10/10 16:38:56    125s]   Not identified SB Latch number: 0
+[10/10 16:38:56    125s]   Not identified MB Latch number: 0
+[10/10 16:38:56    125s]   Number of sequential cells which are not FFs: 0
+[10/10 16:38:56    125s] Total number of combinational cells: 0
+[10/10 16:38:56    125s] Total number of sequential cells: 0
+[10/10 16:38:56    125s] Total number of tristate cells: 0
+[10/10 16:38:56    125s] Total number of level shifter cells: 0
+[10/10 16:38:56    125s] Total number of power gating cells: 0
+[10/10 16:38:56    125s] Total number of isolation cells: 0
+[10/10 16:38:56    125s] Total number of power switch cells: 0
+[10/10 16:38:56    125s] Total number of pulse generator cells: 0
+[10/10 16:38:56    125s] Total number of always on buffers: 0
+[10/10 16:38:56    125s] Total number of retention cells: 0
+[10/10 16:38:56    125s] List of usable buffers:
+[10/10 16:38:56    125s] Total number of usable buffers: 0
+[10/10 16:38:56    125s] List of unusable buffers:
+[10/10 16:38:56    125s] Total number of unusable buffers: 0
+[10/10 16:38:56    125s] List of usable inverters:
+[10/10 16:38:56    125s] Total number of usable inverters: 0
+[10/10 16:38:56    125s] List of unusable inverters:
+[10/10 16:38:56    125s] Total number of unusable inverters: 0
+[10/10 16:38:56    125s] List of identified usable delay cells:
+[10/10 16:38:56    125s] Total number of identified usable delay cells: 0
+[10/10 16:38:56    125s] List of identified unusable delay cells:
+[10/10 16:38:56    125s] Total number of identified unusable delay cells: 0
+[10/10 16:38:56    125s] 
+[10/10 16:38:56    125s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) End ...
+[10/10 16:38:56    125s] No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+[10/10 16:38:56    125s] 
+[10/10 16:38:56    125s] TimeStamp Deleting Cell Server Begin ...
+[10/10 16:38:56    125s] 
+[10/10 16:38:56    125s] TimeStamp Deleting Cell Server End ...
+[10/10 16:38:56    125s] Ending "Cell type marking" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1008.9M, current mem=1008.9M)
+[10/10 16:38:56    125s] 
+[10/10 16:38:56    125s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) Begin ...
+[10/10 16:38:56    125s] Summary for sequential cells identification: 
+[10/10 16:38:56    125s]   Identified SBFF number: 0
+[10/10 16:38:56    125s]   Identified MBFF number: 0
+[10/10 16:38:56    125s]   Identified SB Latch number: 0
+[10/10 16:38:56    125s]   Identified MB Latch number: 0
+[10/10 16:38:56    125s]   Not identified SBFF number: 0
+[10/10 16:38:56    125s]   Not identified MBFF number: 0
+[10/10 16:38:56    125s]   Not identified SB Latch number: 0
+[10/10 16:38:56    125s]   Not identified MB Latch number: 0
+[10/10 16:38:56    125s]   Number of sequential cells which are not FFs: 0
+[10/10 16:38:56    125s] **WARN: (IMPOPT-3000):	Buffer footprint is not defined or is an invalid buffer footprint.
+[10/10 16:38:56    125s] Type 'man IMPOPT-3000' for more detail.
+[10/10 16:38:56    125s] **WARN: (IMPOPT-3001):	Inverter footprint is not defined or is an invalid inverter footprint.
+[10/10 16:38:56    125s] Type 'man IMPOPT-3001' for more detail.
+[10/10 16:38:56    125s]  Visiting view : wc
+[10/10 16:38:56    125s]    : PowerDomain = none : Weighted F : unweighted  = -922337203685477632.00 (1.000) with rcCorner = 0
+[10/10 16:38:56    125s]    : PowerDomain = none : no stdDelay from this view
+[10/10 16:38:56    125s]    : PowerDomain = none : Weighted F : unweighted  = -922337203685477632.00 (1.000) with rcCorner = -1
+[10/10 16:38:56    125s]  Visiting view : bc
+[10/10 16:38:56    125s]    : PowerDomain = none : Weighted F : unweighted  = -922337203685477632.00 (1.000) with rcCorner = 0
+[10/10 16:38:56    125s]    : PowerDomain = none : no stdDelay from this view
+[10/10 16:38:56    125s]    : PowerDomain = none : Weighted F : unweighted  = -922337203685477632.00 (1.000) with rcCorner = -1
+[10/10 16:38:56    125s] *INFO : stdDelay is calculated as zero; using legacy method.
+[10/10 16:38:56    125s] *INFO : stdSlew is calculated as zero; using legacy method.
+[10/10 16:38:56    125s] TLC MultiMap info (StdDelay):
+[10/10 16:38:56    125s]   : min + fast + 1 + no RcCorner := -9.22337e+17ps
+[10/10 16:38:56    125s]   : min + fast + 1 + Rc := -9.22337e+17ps
+[10/10 16:38:56    125s]   : max + slow + 1 + no RcCorner := -9.22337e+17ps
+[10/10 16:38:56    125s]   : max + slow + 1 + Rc := -9.22337e+17ps
+[10/10 16:38:56    125s]  Setting StdDelay to: 10ps
+[10/10 16:38:56    125s] 
+[10/10 16:38:56    125s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) End ...
+[10/10 16:38:56    125s] 
+[10/10 16:38:56    125s] *** Summary of all messages that are not suppressed in this session:
+[10/10 16:38:56    125s] Severity  ID               Count  Summary                                  
+[10/10 16:38:56    125s] WARNING   IMPLF-155            6  ViaRule only supports routing/cut layer,...
+[10/10 16:38:56    125s] WARNING   IMPTRN-1101          1  Could not determine power-rail locations...
+[10/10 16:38:56    125s] WARNING   IMPOPT-3000          1  Buffer footprint is not defined or is an...
+[10/10 16:38:56    125s] WARNING   IMPOPT-3001          1  Inverter footprint is not defined or is ...
+[10/10 16:38:56    125s] ERROR     IMPREPO-102        125  Instance %s of the cell %s has no physic...
+[10/10 16:38:56    125s] ERROR     IMPREPO-103          1  There are %d instances (%d cells) with n...
+[10/10 16:38:56    125s] WARNING   TCLCMD-1461          2  Skipped unsupported command: %s          
+[10/10 16:38:56    125s] *** Message Summary: 11 warning(s), 126 error(s)
+[10/10 16:38:56    125s] 
+[10/10 16:39:01    126s] <CMD> zoomBox -1.08000 0.03250 0.95200 1.01500
+[10/10 16:39:02    126s] <CMD> zoomBox -1.44500 -0.01850 1.36800 1.34150
+[10/10 16:39:02    126s] <CMD> zoomBox -0.93800 0.05250 0.78950 0.88750
+[10/10 16:39:03    126s] <CMD> zoomBox -1.44400 -0.01700 1.36900 1.34300
+[10/10 16:39:03    126s] <CMD> zoomBox -2.26750 -0.13000 2.31400 2.08500
+[10/10 16:39:13    127s] <CMD> getIoFlowFlag
+[10/10 16:39:36    129s] <CMD> setIoFlowFlag 0
+[10/10 16:39:36    129s] <CMD> floorPlan -r 1.0 0.7 6 6 6 6
+[10/10 16:39:36    129s] Adjusting Core to Bottom to: 6.0800.
+[10/10 16:39:36    129s] Horizontal Layer M1 offset = 190 (guessed)
+[10/10 16:39:36    129s] Vertical Layer M2 offset = 200 (derived)
+[10/10 16:39:36    129s] Suggestion: specify LAYER OFFSET in LEF file
+[10/10 16:39:36    129s] Reason: hard to extract LAYER OFFSET from standard cells
+[10/10 16:39:36    129s] Generated pitch 0.5 in M11 is different from 0.48 defined in technology file in unpreferred direction.
+[10/10 16:39:36    129s] Generated pitch 0.5 in M11 is different from 0.48 defined in technology file in preferred direction.
+[10/10 16:39:36    129s] Generated pitch 0.4 in M10 is different from 0.48 defined in technology file in unpreferred direction.
+[10/10 16:39:36    129s] Generated pitch 0.5 in M10 is different from 0.48 defined in technology file in preferred direction.
+[10/10 16:39:36    129s] Generated pitch 0.2 in M9 is different from 0.33 defined in technology file in unpreferred direction.
+[10/10 16:39:36    129s] Generated pitch 0.4 in M9 is different from 0.33 defined in technology file in preferred direction.
+[10/10 16:39:36    129s] Generated pitch 0.19 in M2 is different from 0.2 defined in technology file in unpreferred direction.
+[10/10 16:39:36    129s] Generated pitch 0.2 in M1 is different from 0.19 defined in technology file in unpreferred direction.
+[10/10 16:39:36    129s] <CMD> uiSetTool select
+[10/10 16:39:36    129s] <CMD> getIoFlowFlag
+[10/10 16:39:36    129s] <CMD> fit
+[10/10 16:39:38    129s] <CMD> zoomBox -5.29050 1.39450 17.37850 12.35400
+[10/10 16:39:39    129s] <CMD> zoomBox -2.11400 2.89950 14.26550 10.81850
+[10/10 16:39:39    129s] <CMD> zoomBox 2.51550 5.09100 9.78400 8.60500
+[10/10 16:39:39    129s] <CMD> zoomBox 4.56950 6.06300 7.79500 7.62250
+[10/10 16:39:40    129s] <CMD> zoomBox 5.35300 6.43400 7.03650 7.24800
+[10/10 16:39:40    129s] <CMD> zoomBox 4.56900 6.06300 7.79450 7.62250
+[10/10 16:39:40    130s] <CMD> zoomBox 3.06650 5.35200 9.24800 8.34050
+[10/10 16:39:40    130s] <CMD> zoomBox 0.19000 3.99000 12.03250 9.71550
+[10/10 16:39:41    130s] <CMD> zoomBox -5.32150 1.38100 17.36700 12.35000
+[10/10 16:39:41    130s] <CMD> zoomBox -15.87950 -3.61650 27.58650 17.39750
+[10/10 16:39:41    130s] <CMD> zoomBox -29.75700 -10.18600 41.02050 24.03250
+[10/10 16:39:58    131s] <CMD> setSrouteMode -viaConnectToShape { noshape }
+[10/10 16:39:58    131s] <CMD> sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { M1(1) M11(11) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { M1(1) M11(11) } -nets { VDD VSS } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { M1(1) M11(11) }
+[10/10 16:39:58    131s] *** Begin SPECIAL ROUTE on Fri Oct 10 16:39:58 2025 ***
+[10/10 16:39:58    131s] SPECIAL ROUTE ran on directory: /home/iiitdmk/Desktop/scalable_project3
+[10/10 16:39:58    131s] SPECIAL ROUTE ran on machine: cad28 (Linux 3.10.0-1160.el7.x86_64 x86_64 4.36Ghz)
+[10/10 16:39:58    131s] 
+[10/10 16:39:58    131s] Begin option processing ...
+[10/10 16:39:58    131s] srouteConnectPowerBump set to false
+[10/10 16:39:58    131s] routeSelectNet set to "VDD VSS"
+[10/10 16:39:58    131s] routeSpecial set to true
+[10/10 16:39:58    131s] srouteBlockPin set to "useLef"
+[10/10 16:39:58    131s] srouteBottomLayerLimit set to 1
+[10/10 16:39:58    131s] srouteBottomTargetLayerLimit set to 1
+[10/10 16:39:58    131s] srouteConnectConverterPin set to false
+[10/10 16:39:58    131s] srouteCrossoverViaBottomLayer set to 1
+[10/10 16:39:58    131s] srouteCrossoverViaTopLayer set to 11
+[10/10 16:39:58    131s] srouteFloatingStripeTarget set to "blockring padring ring stripe ringpin blockpin followpin"
+[10/10 16:39:58    131s] srouteFollowCorePinEnd set to 3
+[10/10 16:39:58    131s] srouteJogControl set to "preferWithChanges differentLayer"
+[10/10 16:39:58    131s] srouteNoViaOnWireShape set to "padring ring stripe blockring blockpin coverpin blockwire corewire followpin iowire"
+[10/10 16:39:58    131s] sroutePadPinAllPorts set to true
+[10/10 16:39:58    131s] sroutePreserveExistingRoutes set to true
+[10/10 16:39:58    131s] srouteRoutePowerBarPortOnBothDir set to true
+[10/10 16:39:58    131s] srouteStopBlockPin set to "nearestTarget"
+[10/10 16:39:58    131s] srouteTopLayerLimit set to 11
+[10/10 16:39:58    131s] srouteTopTargetLayerLimit set to 11
+[10/10 16:39:58    131s] End option processing: cpu: 0:00:00, real: 0:00:00, peak: 2405.00 megs.
+[10/10 16:39:58    131s] 
+[10/10 16:39:58    131s] Reading DB technology information...
+[10/10 16:39:58    131s] Finished reading DB technology information.
+[10/10 16:39:58    131s] Reading floorplan and netlist information...
+[10/10 16:39:58    131s] Finished reading floorplan and netlist information.
+[10/10 16:39:58    131s] **WARN: (IMPSR-4302):	Cap-table/qrcTechFile is found in the design, so the same information from the technology file will be ignored.
+[10/10 16:39:58    131s] Read in 23 layers, 11 routing layers, 1 overlap layer
+[10/10 16:39:58    131s] Read in 2 nondefault rules, 0 used
+[10/10 16:39:58    131s] Read in 0 macros, 0 used
+[10/10 16:39:58    131s] Read in 71 logical pins
+[10/10 16:39:58    131s] Read in 71 nets
+[10/10 16:39:58    131s] Read in 2 special nets
+[10/10 16:39:58    131s] 2 nets selected.
+[10/10 16:39:58    131s] 
+[10/10 16:39:58    131s] Begin power routing ...
+[10/10 16:39:58    131s] #No via in the lib
+[10/10 16:39:58    131s] #create default rule from bind_ndr_rule rule=0x7f3aed1b65e0 0x7f3af2e02828
+[10/10 16:39:58    131s] #WARNING (NRDB-166) Boundary for CELL_VIEW ADDFHX2,abstract is not properly defined. Correct the SIZE of the corresponding MACRO in the library.
+[10/10 16:39:58    131s] #WARNING (NRDB-733) PIN A in CELL_VIEW ADDFHX2 does not have physical port.
+[10/10 16:39:58    131s] #WARNING (NRDB-733) PIN B in CELL_VIEW ADDFHX2 does not have physical port.
+[10/10 16:39:58    131s] #WARNING (NRDB-733) PIN CI in CELL_VIEW ADDFHX2 does not have physical port.
+[10/10 16:39:58    131s] #WARNING (NRDB-733) PIN CO in CELL_VIEW ADDFHX2 does not have physical port.
+[10/10 16:39:58    131s] #WARNING (NRDB-733) PIN S in CELL_VIEW ADDFHX2 does not have physical port.
+[10/10 16:39:58    131s] #WARNING (NRDB-166) Boundary for CELL_VIEW ADDFHX4,abstract is not properly defined. Correct the SIZE of the corresponding MACRO in the library.
+[10/10 16:39:58    131s] #WARNING (NRDB-733) PIN A in CELL_VIEW ADDFHX4 does not have physical port.
+[10/10 16:39:58    131s] #WARNING (NRDB-733) PIN B in CELL_VIEW ADDFHX4 does not have physical port.
+[10/10 16:39:58    131s] #WARNING (NRDB-733) PIN CI in CELL_VIEW ADDFHX4 does not have physical port.
+[10/10 16:39:58    131s] #WARNING (NRDB-733) PIN CO in CELL_VIEW ADDFHX4 does not have physical port.
+[10/10 16:39:58    131s] #WARNING (NRDB-733) PIN S in CELL_VIEW ADDFHX4 does not have physical port.
+[10/10 16:39:58    131s] #WARNING (NRDB-166) Boundary for CELL_VIEW ADDFHXL,abstract is not properly defined. Correct the SIZE of the corresponding MACRO in the library.
+[10/10 16:39:58    131s] #WARNING (NRDB-733) PIN A in CELL_VIEW ADDFHXL does not have physical port.
+[10/10 16:39:58    131s] #WARNING (NRDB-733) PIN B in CELL_VIEW ADDFHXL does not have physical port.
+[10/10 16:39:58    131s] #WARNING (NRDB-733) PIN CI in CELL_VIEW ADDFHXL does not have physical port.
+[10/10 16:39:58    131s] #WARNING (NRDB-733) PIN CO in CELL_VIEW ADDFHXL does not have physical port.
+[10/10 16:39:58    131s] #WARNING (NRDB-733) PIN S in CELL_VIEW ADDFHXL does not have physical port.
+[10/10 16:39:58    131s] #WARNING (NRDB-166) Boundary for CELL_VIEW ADDFXL,abstract is not properly defined. Correct the SIZE of the corresponding MACRO in the library.
+[10/10 16:39:58    131s] #WARNING (NRDB-733) PIN A in CELL_VIEW ADDFXL does not have physical port.
+[10/10 16:39:58    131s] #WARNING (NRDB-733) PIN B in CELL_VIEW ADDFXL does not have physical port.
+[10/10 16:39:58    131s] #WARNING (NRDB-733) PIN CI in CELL_VIEW ADDFXL does not have physical port.
+[10/10 16:39:58    131s] #WARNING (NRDB-733) PIN CO in CELL_VIEW ADDFXL does not have physical port.
+[10/10 16:39:58    131s] #WARNING (NRDB-733) PIN S in CELL_VIEW ADDFXL does not have physical port.
+[10/10 16:39:58    131s] #WARNING (NRDB-166) Boundary for CELL_VIEW ADDHX2,abstract is not properly defined. Correct the SIZE of the corresponding MACRO in the library.
+[10/10 16:39:58    131s] #WARNING (EMS-27) Message (NRDB-733) has exceeded the current message display limit of 20.
+[10/10 16:39:58    131s] #To increase the message display limit, refer to the product command reference manual.
+[10/10 16:39:58    131s] #WARNING (NRDB-166) Boundary for CELL_VIEW ADDHXL,abstract is not properly defined. Correct the SIZE of the corresponding MACRO in the library.
+[10/10 16:39:58    131s] #WARNING (NRDB-166) Boundary for CELL_VIEW AND2X4,abstract is not properly defined. Correct the SIZE of the corresponding MACRO in the library.
+[10/10 16:39:58    131s] #WARNING (NRDB-166) Boundary for CELL_VIEW AND2X6,abstract is not properly defined. Correct the SIZE of the corresponding MACRO in the library.
+[10/10 16:39:58    131s] #WARNING (NRDB-166) Boundary for CELL_VIEW AND2XL,abstract is not properly defined. Correct the SIZE of the corresponding MACRO in the library.
+[10/10 16:39:58    131s] #WARNING (NRDB-166) Boundary for CELL_VIEW AND3X1,abstract is not properly defined. Correct the SIZE of the corresponding MACRO in the library.
+[10/10 16:39:58    131s] #WARNING (NRDB-166) Boundary for CELL_VIEW AND3X8,abstract is not properly defined. Correct the SIZE of the corresponding MACRO in the library.
+[10/10 16:39:58    131s] #WARNING (NRDB-166) Boundary for CELL_VIEW AND3XL,abstract is not properly defined. Correct the SIZE of the corresponding MACRO in the library.
+[10/10 16:39:58    131s] #WARNING (NRDB-166) Boundary for CELL_VIEW AND4X1,abstract is not properly defined. Correct the SIZE of the corresponding MACRO in the library.
+[10/10 16:39:58    131s] #WARNING (NRDB-166) Boundary for CELL_VIEW AND4X4,abstract is not properly defined. Correct the SIZE of the corresponding MACRO in the library.
+[10/10 16:39:58    131s] #WARNING (NRDB-166) Boundary for CELL_VIEW AND4X8,abstract is not properly defined. Correct the SIZE of the corresponding MACRO in the library.
+[10/10 16:39:58    131s] #WARNING (NRDB-166) Boundary for CELL_VIEW AND4XL,abstract is not properly defined. Correct the SIZE of the corresponding MACRO in the library.
+[10/10 16:39:58    131s] #WARNING (NRDB-166) Boundary for CELL_VIEW AO21X1,abstract is not properly defined. Correct the SIZE of the corresponding MACRO in the library.
+[10/10 16:39:58    131s] #WARNING (NRDB-166) Boundary for CELL_VIEW AO21X2,abstract is not properly defined. Correct the SIZE of the corresponding MACRO in the library.
+[10/10 16:39:58    131s] #WARNING (NRDB-166) Boundary for CELL_VIEW AO21XL,abstract is not properly defined. Correct the SIZE of the corresponding MACRO in the library.
+[10/10 16:39:58    131s] #WARNING (NRDB-166) Boundary for CELL_VIEW AO22X1,abstract is not properly defined. Correct the SIZE of the corresponding MACRO in the library.
+[10/10 16:39:58    131s] #WARNING (EMS-27) Message (NRDB-166) has exceeded the current message display limit of 20.
+[10/10 16:39:58    131s] #To increase the message display limit, refer to the product command reference manual.
+[10/10 16:39:58    131s] ### import design signature (1): route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1 halo=0
+[10/10 16:39:58    131s] **WARN: (IMPSR-1253):	Unable to find any standard cell pin connected to the VDD net.
+[10/10 16:39:58    131s]  Run the globalNetConnect command or change the CPF file to ensure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as 'USE POWER' or 'USE GROUND' for the connection.
+[10/10 16:39:58    131s] **WARN: (IMPSR-1254):	Unable to connect the specified objects, since block pins of the VDD net were not found in the design. Check netlist or change the parameter value to include block pins in the design.
+[10/10 16:39:58    131s] **WARN: (IMPSR-1256):	Unable to find any CORE class pad pin of the VDD net due to unavailability of the pin or check netlist in the routing area or layer. Change routing area or layer to include the expected pin or check netlist. Alternatively, change port class in the technology file.
+[10/10 16:39:58    131s] Type 'man IMPSR-1256' for more detail.
+[10/10 16:39:58    131s] Cannot find any AREAIO class pad pin of net VDD. Check net list, or change port class in the technology file, or change option to include pin in given range.
+[10/10 16:39:58    131s] **WARN: (IMPSR-1253):	Unable to find any standard cell pin connected to the VSS net.
+[10/10 16:39:58    131s]  Run the globalNetConnect command or change the CPF file to ensure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as 'USE POWER' or 'USE GROUND' for the connection.
+[10/10 16:39:58    131s] **WARN: (IMPSR-1254):	Unable to connect the specified objects, since block pins of the VSS net were not found in the design. Check netlist or change the parameter value to include block pins in the design.
+[10/10 16:39:58    131s] **WARN: (IMPSR-1256):	Unable to find any CORE class pad pin of the VSS net due to unavailability of the pin or check netlist in the routing area or layer. Change routing area or layer to include the expected pin or check netlist. Alternatively, change port class in the technology file.
+[10/10 16:39:58    131s] Type 'man IMPSR-1256' for more detail.
+[10/10 16:39:58    131s] Cannot find any AREAIO class pad pin of net VSS. Check net list, or change port class in the technology file, or change option to include pin in given range.
+[10/10 16:39:58    131s]   Number of IO ports routed: 0
+[10/10 16:39:58    131s]   Number of Block ports routed: 0
+[10/10 16:39:58    131s]   Number of Stripe ports routed: 0
+[10/10 16:39:58    131s]   Number of Core ports routed: 0
+[10/10 16:39:58    131s]   Number of Pad ports routed: 0
+[10/10 16:39:58    131s]   Number of Power Bump ports routed: 0
+[10/10 16:39:58    131s] End power routing: cpu: 0:00:00, real: 0:00:00, peak: 2447.00 megs.
+[10/10 16:39:58    131s] 
+[10/10 16:39:58    131s] 
+[10/10 16:39:58    131s] 
+[10/10 16:39:58    131s]  Begin updating DB with routing results ...
+[10/10 16:39:58    131s]  Updating DB with 0 via definition ...Extracting standard cell pins and blockage ...... 
+[10/10 16:39:58    131s] Pin and blockage extraction finished
+[10/10 16:39:58    131s] 
+[10/10 16:39:58    131s] sroute created 0 wire.
+[10/10 16:39:58    131s] ViaGen created 0 via, deleted 0 via to avoid violation.
+[10/10 16:40:02    132s] <CMD> win off

@@ -1,0 +1,20 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+Version: 20.11-s111_1, built Mon Apr 26 02:27:38 PDT 2021
+Options: 
+Date:    Fri Oct 17 14:25:30 2025
+Host:    cad28 (x86_64 w/Linux 3.10.0-1160.el7.x86_64) (6cores*12cpus*1physical cpu*Intel(R) Core(TM) i7-8700 CPU @ 3.20GHz 12288KB) (16201468KB)
+PID:     8717
+OS:      Red Hat Enterprise Linux Server release 7.9 (Maipo)
+
+Checking out license: Genus_Synthesis
+License 'Genus_Synthesis' (main version: 20.1, alternate version: 20.1) checkout failed.
+Checking out license: Virtuoso_Digital_Implem
+License 'Virtuoso_Digital_Implem' (main version: 20.1, alternate version: 20.1) checkout failed.
+Checking out license: Virtuoso_Digital_Implem_XL
+License 'Virtuoso_Digital_Implem_XL' (main version: 20.1, alternate version: 20.1) checkout failed.
+Cannot obtain 'Genus_Synthesis' license.
+Abnormal exit.

@@ -1,0 +1,19 @@
+ncsim(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> database -open waves -into waves.shm -default
+Created default SHM database waves
+ncsim> probe -create -shm tb_pe256_scalable_selfchecking.error_count tb_pe256_scalable_selfchecking.expected_q tb_pe256_scalable_selfchecking.i tb_pe256_scalable_selfchecking.tb_d tb_pe256_scalable_selfchecking.tb_q tb_pe256_scalable_selfchecking.tb_v
+Created probe 1
+ncsim> run
+SUCCESS: All tests passed!
+Simulation complete via $finish(1) at time 2800 NS + 0
+./priority_encoder_tb.v:85         $finish;
+ncsim> ^C
+ncsim> exit
+...Regained control from SimVision
+-------------------------------------
+ncsim: Memory Usage - 38.6M program + 174.6M data = 213.2M total (216.8M Peak)
+ncsim: CPU Usage - 5.6s system + 3.3s user = 8.9s total (520.5s, 1.7% cpu)
