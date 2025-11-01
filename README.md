@@ -3,7 +3,7 @@
 [![Technology](https://img.shields.io/badge/Technology-180nm%20CMOS-blue.svg)](https://github.com/sohan2311/Scalable-High-Performance-Priority-Encoder-Using-1D-Array-to-2D-Array-Conversion)
 [![Technology](https://img.shields.io/badge/Technology-90nm%20CMOS-blue.svg)](https://github.com/sohan2311/Scalable-High-Performance-Priority-Encoder-Using-1D-Array-to-2D-Array-Conversion)
 [![Technology](https://img.shields.io/badge/Technology-45nm%20CMOS-blue.svg)](https://github.com/sohan2311/Scalable-High-Performance-Priority-Encoder-Using-1D-Array-to-2D-Array-Conversion)
-[![EDA](https://img.shields.io/badge/EDA-Software-Cadence-red.svg)](https://github.com/sohan2311/Scalable-High-Performance-Priority-Encoder-Using-1D-Array-to-2D-Array-Conversion)
+[![EDA Tool](https://img.shields.io/badge/EDA-Software-Cadence-red.svg)](https://github.com/sohan2311/Scalable-High-Performance-Priority-Encoder-Using-1D-Array-to-2D-Array-Conversion)
 [![Tool](https://img.shields.io/badge/Tool-Genus-orange.svg)](https://github.com/sohan2311/Scalable-High-Performance-Priority-Encoder-Using-1D-Array-to-2D-Array-Conversion)
 [![Tool](https://img.shields.io/badge/Tool-Innovus-orange.svg)](https://github.com/sohan2311/Scalable-High-Performance-Priority-Encoder-Using-1D-Array-to-2D-Array-Conversion)
 [![Flow](https://img.shields.io/badge/Flow-Semi--Custom-green.svg)](https://github.com/sohan2311/Scalable-High-Performance-Priority-Encoder-Using-1D-Array-to-2D-Array-Conversion)
