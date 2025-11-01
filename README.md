@@ -95,6 +95,8 @@ Final Priority Index Output
 3. **Column Priority Encoder**: Determines active row with highest priority
 4. **Output Logic**: Combines row and column indices for final output
 
+### Architechture
+
 <div align="center">
   <img src="Images/Architechture 1D to 2D Array Conversion.png" alt="Architechture 1D to 2D Array Conversion" width="700"/>
 </div>
