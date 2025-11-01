@@ -20,8 +20,8 @@
 - [Design Methodology](#design-methodology)
 - [Performance Results](#performance-results)
 - [Implementation Results](#implementation-results)
+- [Complete Design Flow](#complete-design-flow)
 - [Directory Structure](#directory-structure)
-- [Design Flow](#design-flow)
 - [Getting Started](#getting-started)
 - [References](#references)
 - [Author](#author)
@@ -59,7 +59,7 @@ Traditional priority encoders face scalability challenges. This design converts 
 - 🔧 **Semi-Custom Flow**: Complete RTL-to-GDS implementation
 - 💡 **Optimized Architecture**: Smart matrix dimension selection
 - 🎯 **Verified Design**: Comprehensive functional and timing verification
-- 🔨 **Industry Standard**: 180nm CMOS technology
+- 🔨 **Industry Standard**: 180nm/90nm/45nm CMOS technology
 
 ---
 
@@ -95,14 +95,14 @@ Final Priority Index Output
 3. **Column Priority Encoder**: Determines active row with highest priority
 4. **Output Logic**: Combines row and column indices for final output
 
-### Architechture
+### Architecture Diagrams
 
 <div align="center">
-  <img src="Images/Architechture 1D to 2D Array Conversion.png" alt="Architechture 1D to 2D Array Conversion" width="700"/>
+  <img src="Images/Architechture 1D to 2D Array Conversion.png" alt="Architecture 1D to 2D Array Conversion" width="700"/>
 </div>
 
 <div align="center">
-  <img src="Images/Architechture Scalable 4x16 to 64.png" alt="Architechture Scalable PE using 4x16 to PE_64" width="700"/>
+  <img src="Images/Architechture Scalable 4x16 to 64.png" alt="Architecture Scalable PE using 4x16 to PE_64" width="700"/>
 </div>
 
 ---
@@ -114,25 +114,30 @@ Final Priority Index Output
 This project follows a complete **RTL-to-GDS semi-custom design flow** using Cadence tools:
 
 ```
-Verilog RTL Design
+RTL Design (Verilog)
       ↓
-Functional Simulation (NCLaunch)
+Functional Simulation (NCLaunch/Incisive)
       ↓
 Logic Synthesis (Genus)
       ↓
-Place & Route (Innovus)
+Physical Design (Innovus)
+      ├─→ Floorplanning
+      ├─→ Power Planning
+      ├─→ Placement
+      ├─→ Clock Tree Synthesis
+      └─→ Routing
       ↓
-Post-Layout Simulation
+Post-Layout Verification
       ↓
-Timing & Power Analysis
+GDS II Generation
 ```
 
 ### Technology Specifications
 
 | Parameter | Specification |
 |-----------|--------------|
-| **Process Node** | 180nm CMOS |
-| **Supply Voltage** | 1.8V |
+| **Process Nodes** | 180nm / 90nm / 45nm CMOS |
+| **Supply Voltage** | 1.8V (180nm), 1.0V (90nm), 0.9V (45nm) |
 | **Corner** | TT (Typical-Typical) |
 | **Temperature** | 25°C |
 | **Input Sizes** | 4-bit, 8-bit, 16-bit, 64-bit, 256-bit, 2048-bit |
@@ -159,7 +164,7 @@ This implementation achieves **1.2× to 1.5× higher operating frequency** compa
 ### Schematic Design
 
 <div align="center">
-  <img src="Scalable PE64/scalable_PE64 (main - 180nm)/gui_schematic.png" alt="Priority Encoder -scalable 180nm Schematic" width="750"/>
+  <img src="Scalable PE64/scalable_PE64 (main - 180nm)/gui_schematic.png" alt="Priority Encoder Scalable 180nm Schematic" width="750"/>
   <p><em>Complete Schematic Design</em></p>
 </div>
 
@@ -177,11 +182,13 @@ This implementation achieves **1.2× to 1.5× higher operating frequency** compa
   <p><em>Final Layout after Place and Route</em></p>
 </div>
 
-### 3D Layout 
+### 3D Layout Views
+
 <div align="center">
   <img src="Scalable PE64/scalable_PE64 (main - 90nm)/Images/innovus/3d_layout_design.jpg" alt="Layout 3D View Front" width="650"/>
   <p><em>Final Layout 3D View Front</em></p>
 </div>
+
 <div align="center">
   <img src="Scalable PE64/scalable_PE64 (main - 90nm)/Images/innovus/3d_layout_back.jpg" alt="Layout 3D View Back" width="650"/>
   <p><em>Final Layout 3D View Back</em></p>
@@ -191,94 +198,592 @@ This implementation achieves **1.2× to 1.5× higher operating frequency** compa
 
 <div align="center">
   <img src="Scalable PE64/scalable_PE64 (main - 180nm)/Waveforms/wave1.png" alt="Functional Simulation" width="800"/>
-  <p><em>Functional Verification Waveform1</em></p>
+  <p><em>Functional Verification Waveform 1</em></p>
 </div>
 
 <div align="center">
   <img src="Scalable PE64/scalable_PE64 (main - 180nm)/Waveforms/wave2.png" alt="Functional Simulation" width="800"/>
-  <p><em>Functional Verification Waveform2</em></p>
+  <p><em>Functional Verification Waveform 2</em></p>
 </div>
 
-<div align="center">
-  <img src="Scalable PE64/scalable_PE64 (main - 180nm)/Waveforms/wave3.png" alt="Functional Simulation" width="800"/>
-  <p><em>Functional Verification Waveform3</em></p>
-</div>
-
-<div align="center">
-  <img src="Scalable PE64/scalable_PE64 (main - 180nm)/Waveforms/wave4.png" alt="Functional Simulation" width="800"/>
-  <p><em>Functional Verification Waveform4</em></p>
-</div>
-
-<div align="center">
-  <img src="Scalable PE64/scalable_PE64 (main - 180nm)/Waveforms/wave5.png" alt="Functional Simulation" width="800"/>
-  <p><em>Functional Verification Waveform5</em></p>
-</div>
-
-### Timing Analysis
+### Analysis Reports
 
 <div align="center">
   <img src="Scalable PE64/scalable_PE64 (main - 90nm)/Images/nclaunch/Genus Timing Analysis.png" alt="Timing Analysis" width="800"/>
-  <p><em>Timing Analysis</em></p>
+  <p><em>Timing Analysis Report</em></p>
 </div>
 
-### Power Analysis
 <div align="center">
   <img src="Scalable PE64/scalable_PE64 (main - 90nm)/Innovus Reports/post_power_analysis.jpg" alt="Power Analysis" width="800"/>
-  <p><em>Power Analysis</em></p>
+  <p><em>Power Analysis Report</em></p>
+</div>
 
-### Area Report
 <div align="center">
-  <img src="Scalable PE64/scalable_PE64 (main - 90nm)/Innovus Reports/post_area_analysis.jpg" alt="Report - Area" width="800"/>
+  <img src="Scalable PE64/scalable_PE64 (main - 90nm)/Innovus Reports/post_area_analysis.jpg" alt="Area Report" width="800"/>
   <p><em>Area Report</em></p>
+</div>
 
-  
-  
 ---
 
-## 📂 Directory Structure
-.............................................................................
+## 🛠️ Complete Design Flow
 
-## 🛠️ Design Flow
+### Prerequisites
 
-### Step 1: RTL Design
+Before starting the design flow, ensure the following:
 
-All Verilog RTL modules are located in [`rtl/`](./rtl) directory:
-- **[4-bit Priority Encoder](./rtl/priority_encoder_4bit.v)** - Basic module
-- **[8-bit Priority Encoder](./rtl/priority_encoder_8bit.v)** - Extended version
-- **[64-bit Priority Encoder](./rtl/priority_encoder_64bit.v)** - Full implementation
-- **[Top Module](./rtl/priority_encoder_top.v)** - Top-level design
+1. **Licensing Server** is switched ON and client is connected
+2. **Cadence Tools** are properly installed and licensed
+3. **Technology Libraries** (180nm/90nm/45nm) are available
 
-### Step 2: Functional Simulation
+### Environment Setup
 
-Simulate using NCLaunch with testbenches in [`testbench/`](./testbench):
-- Comprehensive test patterns
-- Corner case verification
-- Functional correctness validation
+```bash
+# Open terminal in project directory
+csh
+source /home/install/cshrc
+# You should see: "Welcome to Cadence Tool Suite"
+```
 
-Simulation scripts: [`simulation/nclaunch/`](./simulation/nclaunch)
+---
 
-### Step 3: Logic Synthesis
+### Module 1: RTL Design
 
-Synthesize using **Cadence Genus**:
-- Scripts: [`synthesis/scripts/`](./synthesis/scripts)
-- Constraints: [`synthesis/scripts/constraints.sdc`](./synthesis/scripts/constraints.sdc)
-- Reports: [`synthesis/reports/`](./synthesis/reports)
-- Netlist: [`synthesis/netlist/`](./synthesis/netlist)
+Create Verilog RTL code for the priority encoder design.
 
-### Step 4: Place and Route
+**Commands:**
+```bash
+# Create RTL file
+gedit priority_encoder_64bit.v
 
-Implement using **Cadence Innovus**:
-- Floorplan: [`pnr/scripts/floorplan.tcl`](./pnr/scripts/floorplan.tcl)
-- Placement: [`pnr/scripts/placement.tcl`](./pnr/scripts/placement.tcl)
-- CTS: [`pnr/scripts/cts.tcl`](./pnr/scripts/cts.tcl)
-- Routing: [`pnr/scripts/routing.tcl`](./pnr/scripts/routing.tcl)
-- Final Output: [`pnr/output/`](./pnr/output)
+# Create testbench file
+gedit tb_priority_encoder_64bit.v
+```
 
-### Step 5: Verification
+**Files to Create:**
+- `priority_encoder_4bit.v` - 4-bit basic encoder
+- `priority_encoder_8bit.v` - 8-bit encoder
+- `priority_encoder_64bit.v` - 64-bit scalable encoder
+- `tb_priority_encoder_64bit.v` - Comprehensive testbench
 
-- **Timing Analysis**: Using Innovus timing engine
-- **DRC/LVS**: Design rule and layout vs schematic checks
-- **Post-Layout Simulation**: Gate-level simulation with SDF backannotation
+---
+
+### Module 2: Functional Simulation Using NCLaunch/Incisive
+
+**Step 1: Launch NCLaunch**
+```bash
+nclaunch -new    # First time only
+nclaunch         # Subsequent runs
+```
+
+**Step 2: Create cds.lib File**
+- Select **Multiple Step**
+- Select **Create cds.lib**
+- Choose library type based on RTL (Verilog/VHDL)
+- Save the cds.lib file
+
+**Step 3: Compilation, Elaboration, and Simulation**
+
+The simulation runs in 3 stages:
+
+1. **Compilation**
+   - Select `.v` or `.vhdl` files
+   - Click on **Verilog Compiler** or **VHDL Compiler**
+   - Modules appear under "Worklib" after successful compilation
+
+2. **Elaboration**
+   - Select module under Worklib
+   - Click **Launch Elaborator**
+   - "Snapshots" are generated on success
+
+3. **Simulation**
+   - Select testbench under snapshots
+   - Click **Launch Simulator**
+   - Design Browser opens showing module hierarchy
+
+**Step 4: Waveform Analysis**
+- Right-click on signals → **Send to Waveform Window**
+- Click **Run simulation** to start
+- Use **pause** to stop simulation
+- Analyze waveforms using zoom controls
+
+**Verification Checklist:**
+- ✓ All input combinations tested
+- ✓ Priority logic verified
+- ✓ Edge cases validated
+- ✓ Timing behavior checked
+
+---
+
+### Module 3: Logic Synthesis Using Genus
+
+**Inputs Required:**
+1. RTL Code (`.v` or `.vhdl`)
+2. Chip-level SDC (System Design Constraints)
+3. Liberty Files (`.lib`)
+
+**Expected Outputs:**
+1. Gate-level netlist
+2. Block-level netlist
+3. Timing, Area, Power reports
+
+**Synthesis Stages:**
+- **Translation**: RTL codes are compiled
+- **Elaboration/Mapping**: Logic replaced with gates from libraries
+- **Optimization**: Cell count reduction without functionality loss
+
+**Step 1: Create Synthesis Script**
+
+Create `rc_script.tcl`:
+```tcl
+# Set design name
+set DESIGN priority_encoder_64bit
+
+# Read Liberty files
+read_libs /path/to/library.lib
+
+# Read RTL
+read_hdl priority_encoder_64bit.v
+
+# Elaborate design
+elaborate $DESIGN
+
+# Read constraints
+read_sdc constraints.sdc
+
+# Synthesize to generic gates
+syn_generic
+
+# Synthesize to technology gates
+syn_map
+
+# Optimize design
+syn_opt
+
+# Write outputs
+write_hdl > ${DESIGN}_netlist.v
+write_sdc > ${DESIGN}_block.sdc
+
+# Generate reports
+report_timing > timing_report.txt
+report_area > area_report.txt
+report_power > power_report.txt
+
+# Launch GUI
+gui_show
+```
+
+**Step 2: Create SDC File**
+
+Create `constraints.sdc`:
+```tcl
+# Clock definition
+create_clock -name clk -period 2.0 [get_ports clk]
+
+# Input/Output delays
+set_input_delay -clock clk 0.5 [all_inputs]
+set_output_delay -clock clk 0.5 [all_outputs]
+
+# Load constraints
+set_load 0.1 [all_outputs]
+```
+
+**Step 3: Run Synthesis**
+```bash
+genus -f rc_script.tcl
+```
+
+**Step 4: Analyze Results**
+- **Schematic Viewer**: Right-click on design → Schematic Viewer → In Main
+- **Timing Report**: Check worst timing paths
+- **Area Report**: Verify cell count and total area
+- **Power Report**: Analyze power consumption
+
+---
+
+### Module 4: Physical Design Using Innovus
+
+**Mandatory Inputs:**
+1. Gate-level netlist (from Synthesis)
+2. Block-level SDC (from Synthesis)
+3. Liberty files (`.lib`)
+4. LEF files (Layer Exchange Format)
+
+**Expected Outputs:**
+1. GDS II file (for fabrication)
+2. Post-layout netlists
+3. Timing, power, area reports
+4. DRC/LVS clean layout
+
+**Launch Innovus:**
+```bash
+innovus
+```
+
+---
+
+### Module 4.1: Import Design
+
+**Step 1: Create Globals File**
+
+Create `design.globals`:
+```tcl
+# Set design name
+set DESIGN priority_encoder_64bit
+
+# Read LEF files
+read_lef /path/to/tech.lef
+read_lef /path/to/cells.lef
+
+# Read netlist
+read_netlist ${DESIGN}_netlist.v
+
+# Initialize design
+init_design
+```
+
+**Step 2: Create View File**
+
+Create `design.view`:
+```tcl
+# Read Liberty files
+read_libs /path/to/library.lib
+
+# Read SDC
+read_sdc ${DESIGN}_block.sdc
+```
+
+**Step 3: Import in Innovus**
+```tcl
+source design.globals
+```
+
+The design is imported and core area is calculated automatically.
+
+---
+
+### Module 4.2: Floorplanning
+
+**GUI Method:**
+- Select **Floorplan → Specify Floorplan**
+- Set parameters:
+  - **Aspect Ratio**: 1.0 (square) or custom
+  - **Core Utilization**: 70-80%
+  - **Core to I/O Spacing**: 10-20 µm
+
+**Script Method:**
+```tcl
+floorPlan -r 1.0 0.7 10 10 10 10
+```
+
+**Parameters:**
+- `-r`: Aspect ratio and core utilization
+- Last 4 values: Left, Bottom, Right, Top spacing
+
+---
+
+### Module 4.3: Power Planning
+
+**Step 1: Connect Global Nets**
+
+```tcl
+# GUI: Power → Connect Global Nets
+# Add connections:
+globalNetConnect VDD -type pgpin -pin VDD -inst * -override
+globalNetConnect VSS -type pgpin -pin VSS -inst * -override
+globalNetConnect VDD -type tiehi -inst * -override
+globalNetConnect VSS -type tielo -inst * -override
+```
+
+**Step 2: Add Power Rings**
+
+```tcl
+# GUI: Power → Power Planning → Add Rings
+addRing -nets {VDD VSS} \
+        -type core_rings \
+        -layer {top METAL9 bottom METAL9 left METAL8 right METAL8} \
+        -width 5 \
+        -spacing 2 \
+        -offset 2
+```
+
+**Parameters:**
+- Use highest metals (METAL8/METAL9) for lowest resistance
+- Width: 5 µm (or as per design requirements)
+- Spacing: 2 µm (minimum spacing)
+
+**Step 3: Add Power Stripes**
+
+```tcl
+# GUI: Power → Power Planning → Add Stripes
+addStripe -nets {VDD VSS} \
+          -layer METAL8 \
+          -direction vertical \
+          -width 2 \
+          -spacing 2 \
+          -set_to_set_distance 20
+```
+
+**Step 4: Special Route (Add Vias)**
+
+```tcl
+# GUI: Route → Special Route
+sroute -connect {corePin} \
+       -layerChangeRange {METAL1 METAL9} \
+       -blockPinTarget {nearestTarget} \
+       -allowJogging 1 \
+       -crossoverViaLayerRange {METAL1 METAL9} \
+       -nets {VDD VSS} \
+       -allowLayerChange 1
+```
+
+This connects power mesh from highest metal to METAL1 (standard cells).
+
+---
+
+### Module 4.4: Pre-Placement Steps
+
+**Step 1: Add End Caps**
+
+```tcl
+# GUI: Place → Physical Cell → Add End Caps
+addEndCap -preCap ENDCAP -postCap ENDCAP -prefix ENDCAP
+```
+
+End caps prevent standard cells from moving beyond core boundaries.
+
+**Step 2: Add Well Taps**
+
+```tcl
+# GUI: Place → Physical Cell → Add Well Tap
+addWellTap -cell WELLTAP \
+           -cellInterval 30 \
+           -prefix WELLTAP
+```
+
+Well taps prevent latch-up effects (typical interval: 30-45 µm).
+
+---
+
+### Module 4.5: Placement
+
+**Step 1: Run Placement**
+
+```tcl
+# GUI: Place → Place Standard Cell → Run Full Placement
+# Enable "Place I/O Pins" option
+place_design -concurrent_macros
+```
+
+**Step 2: Generate Reports**
+
+```tcl
+# Timing Report (Pre-CTS Setup)
+report_timing -late > reports/preCTS_setup_timing.rpt
+
+# Area Report
+report_area > reports/preCTS_area.rpt
+
+# Power Report
+report_power > reports/preCTS_power.rpt
+```
+
+**Step 3: Optimize Design (Pre-CTS)**
+
+```tcl
+# GUI: ECO → Optimize Design
+# Select: Design Stage = PreCTS, Optimization Type = Setup
+optDesign -preCTS -setup
+```
+
+**Step 4: Generate Post-Optimization Reports**
+
+```tcl
+report_timing -late > reports/preCTS_setup_timing_opt.rpt
+report_area > reports/preCTS_area_opt.rpt
+report_power > reports/preCTS_power_opt.rpt
+```
+
+---
+
+### Module 4.6: Clock Tree Synthesis (CTS)
+
+**Step 1: Create CTS Script**
+
+Create `cts_spec.tcl`:
+```tcl
+create_ccopt_clock_tree_spec -file ccopt.spec
+source ccopt.spec
+ccopt_design
+```
+
+**Step 2: Build Clock Tree**
+
+```tcl
+# Source CTS script
+source cts_spec.tcl
+
+# View clock tree
+# GUI: Clock → CCOpt Clock Tree Debugger
+```
+
+The clock tree uses buffers and inverters to distribute clock signal with minimal skew.
+
+**Step 3: Generate CTS Reports**
+
+```tcl
+# Setup Analysis
+report_timing -late > reports/postCTS_setup_timing.rpt
+
+# Hold Analysis
+report_timing -early > reports/postCTS_hold_timing.rpt
+
+# Area Report
+report_area > reports/postCTS_area.rpt
+
+# Power Report
+report_power > reports/postCTS_power.rpt
+```
+
+**Step 4: Optimize Design (Post-CTS)**
+
+```tcl
+# Setup Optimization
+optDesign -postCTS -setup
+
+# Hold Optimization
+optDesign -postCTS -hold
+```
+
+**Step 5: Generate Post-Optimization Reports**
+
+```tcl
+report_timing -late > reports/postCTS_setup_timing_opt.rpt
+report_timing -early > reports/postCTS_hold_timing_opt.rpt
+report_area > reports/postCTS_area_opt.rpt
+report_power > reports/postCTS_power_opt.rpt
+```
+
+---
+
+### Module 4.7: Routing
+
+**Step 1: Run Nano Route**
+
+```tcl
+# GUI: Route → Nano Route → Route
+# Enable: Timing Driven, SI Driven
+routeDesign -globalDetail
+```
+
+**Options:**
+- **Timing Driven**: Optimizes routing for timing
+- **SI Driven**: Reduces signal integrity issues (crosstalk)
+
+**Step 2: Generate Post-Route Reports**
+
+```tcl
+# Setup Analysis
+report_timing -late > reports/postRoute_setup_timing.rpt
+
+# Hold Analysis
+report_timing -early > reports/postRoute_hold_timing.rpt
+
+# Area Report
+report_area > reports/postRoute_area.rpt
+
+# Power Report
+report_power > reports/postRoute_power.rpt
+
+# DRC Report
+verify_drc -report reports/drc.rpt
+```
+
+**Step 3: Optimize Design (Post-Route)**
+
+```tcl
+# Post-route optimization
+optDesign -postRoute -setup
+optDesign -postRoute -hold
+```
+
+**Step 4: Generate Final Reports**
+
+```tcl
+report_timing -late > reports/postRoute_setup_timing_final.rpt
+report_timing -early > reports/postRoute_hold_timing_final.rpt
+report_area > reports/postRoute_area_final.rpt
+report_power > reports/postRoute_power_final.rpt
+```
+
+---
+
+### Module 4.8: Save Outputs
+
+**Step 1: Save Design Database**
+
+```tcl
+# Save Innovus database
+saveDesign design.enc
+```
+
+**Step 2: Save Netlist**
+
+```tcl
+# Save gate-level netlist with parasitics
+saveNetlist priority_encoder_64bit_final.v -excludeLeafCell
+```
+
+**Step 3: Generate GDS II File**
+
+```tcl
+# Save GDS for fabrication
+streamOut priority_encoder_64bit.gds \
+          -mapFile streamOut.map \
+          -libName DESIGN_LIB \
+          -units 1000 \
+          -mode ALL
+```
+
+**Step 4: Extract SDF for Simulation**
+
+```tcl
+# Extract delay information
+write_sdf -version 3.0 priority_encoder_64bit.sdf
+```
+
+**Step 5: Generate Final Reports**
+
+```tcl
+# Summary report
+summaryReport -outFile reports/summary.rpt
+
+# Connection report
+report_connectivity -file reports/connectivity.rpt
+
+# Geometry report
+report_geometry -file reports/geometry.rpt
+```
+
+---
+
+### Post-Layout Verification
+
+**Step 1: DRC (Design Rule Check)**
+```tcl
+verify_drc -report reports/drc_final.rpt
+```
+
+**Step 2: LVS (Layout vs Schematic)**
+```tcl
+verifyConnectivity -report reports/lvs.rpt
+```
+
+**Step 3: Timing Verification**
+- Use extracted SDF with gate-level netlist
+- Run post-layout simulation with NCLaunch
+- Verify setup and hold timing
+
+
 
 ---
 
@@ -288,72 +793,105 @@ Implement using **Cadence Innovus**:
 
 ```bash
 # Required Tools
+- Cadence Incisive/NCLaunch (RTL Simulation)
 - Cadence Genus (Logic Synthesis)
 - Cadence Innovus (Place & Route)
-- Cadence NCLaunch/Xcelium (RTL Simulation)
-- 180nm / 90nm / 45nm CMOS Technology Library
+- Technology Libraries (180nm/90nm/45nm CMOS)
 ```
 
-### Clone Repository
+### Environment Setup
 
 ```bash
+# Clone Repository
 git clone https://github.com/sohan2311/Scalable-High-Performance-Priority-Encoder-Using-1D-Array-to-2D-Array-Conversion.git
 cd Scalable-High-Performance-Priority-Encoder-Using-1D-Array-to-2D-Array-Conversion
+
+# Setup Cadence environment
+csh
+source /home/install/cshrc
 ```
 
-### Run RTL Simulation
+### Quick Start Guide
 
+**1. Run RTL Simulation:**
 ```bash
 cd simulation/nclaunch
-nclaunch -gui -f run_sim.tcl
+nclaunch -new         # First time
+# Or
+nclaunch              # Subsequent runs
 ```
 
-Or for batch mode:
-```bash
-ncverilog -f filelist.f +define+SIM +define+FUNCTIONAL
-```
-
-### Run Synthesis
-
+**2. Run Synthesis:**
 ```bash
 cd synthesis/scripts
-genus -f synthesis.tcl -log ../logs/genus.log
+genus -f rc_script.tcl -log ../logs/genus.log
 ```
 
-### Run Place and Route
-
+**3. Run Physical Design:**
 ```bash
 cd pnr/scripts
-innovus -init innovus_run.tcl -log ../logs/innovus.log
+innovus
+# In Innovus prompt:
+source design.globals
+source floorplan.tcl
+source powerplan.tcl
+source placement.tcl
+source cts_spec.tcl
+source routing.tcl
 ```
 
-### Complete Flow
-
-Run the entire flow using automation script:
+**4. Complete Automated Flow:**
 ```bash
+# Run entire flow from RTL to GDS
 ./scripts/run_all.sh
 ```
 
 ---
 
-## 🔧 Tools Used
+## 🔧 Tools and Technologies
 
-| Tool | Purpose | Version |
-|------|---------|---------|
+| Tool/Technology | Purpose | Version |
+|----------------|---------|---------|
+| **Cadence Incisive/NCLaunch** | RTL Simulation | 21.09 |
 | **Cadence Genus** | Logic Synthesis | 21.1 |
-| **Cadence Innovus** | Place & Route | 21.1 |
-| **Cadence NCLaunch/Xcelium** | RTL Simulation | 21.09 |
-| **Technology** | GPDK 180nm | 180nm CMOS |
+| **Cadence Innovus** | Physical Design | 21.1 |
+| **GPDK 180nm** | Technology Library | 180nm CMOS |
+| **GPDK 90nm** | Technology Library | 90nm CMOS |
+| **GPDK 45nm** | Technology Library | 45nm CMOS |
 
 ### File Formats
 
-- **RTL**: `.v` (Verilog)
-- **Testbench**: `.v` (Verilog)
-- **Scripts**: `.tcl` (TCL)
+- **RTL**: `.v` (Verilog), `.vhdl` (VHDL)
+- **Testbench**: `.v`, `.sv`
+- **Scripts**: `.tcl` (Tool Command Language)
 - **Constraints**: `.sdc` (Synopsys Design Constraints)
+- **Libraries**: `.lib` (Liberty), `.lef` (Layer Exchange Format)
 - **Netlist**: `.v` (Gate-level Verilog)
 - **Layout**: `.gds` (GDSII)
 - **Timing**: `.sdf` (Standard Delay Format)
+- **Database**: `.enc` (Innovus Database)
+
+---
+
+## 📈 Design Optimization Tips
+
+### For Better Timing:
+- Use appropriate clock period constraints
+- Optimize critical paths during synthesis
+- Enable timing-driven placement and routing
+- Balance clock tree for minimal skew
+
+### For Lower Power:
+- Use clock gating where applicable
+- Select low-power cells from library
+- Optimize switching activity
+- Use power-aware synthesis options
+
+### For Smaller Area:
+- Increase core utilization (75-85%)
+- Use area optimization during synthesis
+- Remove redundant logic
+- Share common sub-circuits
 
 ---
 
