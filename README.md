@@ -928,7 +928,7 @@ source routing.tcl
 **Vikramaditya Singh**
 Roll Number - 123EC0042
 
-- GitHub: [@sohan2311](https://github.com/vikramzw-max)
+- GitHub: [@vikramzw-max)](https://github.com/vikramzw-max)
 - Project Link: [Priority Encoder Repository](https://github.com/sohan2311/Scalable-High-Performance-Priority-Encoder-Using-1D-Array-to-2D-Array-Conversion)
 
 
