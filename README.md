@@ -240,6 +240,15 @@ This implementation achieves **1.2× to 1.5× higher operating frequency** compa
 
 ---
 
+### Final Comparative Analysis
+
+<div align="center">
+  <img src="Comparative Analysis.png" alt="Comparative Analysis of 64-bit PE implementations" width="800"/>
+  <p><em>Comparative Analysis between different architechture of PE64 designs</em></p>
+</div>
+
+---
+
 ## 🛠️ Complete Design Flow
 
 ### Prerequisites
