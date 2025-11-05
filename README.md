@@ -927,6 +927,18 @@ source run.tcl
 
 ---
 
+## Acknowledgement 
+
+A big thanks to the **Department of ECE , IIITDM Kurnool** , for providing lab infrastructure for the implementation of the Project .
+Special mention to **Dr. P. Rangababu** , Associate Professor - Dept of ECE , IIITDM Kurnool for being our guide throughout the coursework of this project.
+Thanks to technicians and lab assistants who helped us in all minimal problems we faced during the period of the coursework of this project
+
+Finally , we thank the **Government of India - C2S Programme** , for providing us all necessary liscences of Cadence Virtuoso , Genus & Innovus suite .
+
+**Thank You**
+
+---
+
 ## 👤 Author
 
 **Vikramaditya Singh**
