@@ -941,13 +941,6 @@ Finally , we thank the **Government of India - C2S Programme** , for providing u
 
 ## 👤 Author
 
-**Vikramaditya Singh**
-Roll Number - 123EC0042
-
-- GitHub: [@vikramzw-max)](https://github.com/vikramzw-max)
-- Project Link: [Priority Encoder Repository](https://github.com/sohan2311/Scalable-High-Performance-Priority-Encoder-Using-1D-Array-to-2D-Array-Conversion)
-
-
 **Sohan Maity**
 Roll Number - 523EC0001
 
